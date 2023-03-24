@@ -24,7 +24,8 @@
     "styled-components": "^5.3.8"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.3.1"
+    "@docusaurus/module-type-aliases": "2.3.1",
+    "@giscus/react": "^2.2.8"
   },
   "browserslist": {
     "production": [
