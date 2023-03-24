@@ -17,7 +17,6 @@ import { useColorMode } from "@docusaurus/theme-common";
  * Decide if the toc should be rendered, on mobile or desktop viewports
  */
 function useDocTOC() {
-  const { colorMode } = useColorMode();
   const { frontMatter, toc } = useDoc();
   const windowSize = useWindowSize();
   const hidden = frontMatter.hide_table_of_contents;
@@ -35,6 +34,7 @@ function useDocTOC() {
 }
 export default function DocItemLayout({ children }) {
   const docTOC = useDocTOC();
+  const { colorMode } = useColorMode();
   return (
     <div className="row">
       <div className={clsx("col", !docTOC.hidden && styles.docItemCol)}>
