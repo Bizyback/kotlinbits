@@ -57,7 +57,7 @@ That is an example of a **`template expression`**, evaluated expressions added t
 Oh wow, wait! Can this work for any expression 🥺 ?
 > It depends, but it pretty much  works most for expressions
 
-```Kotlin
+```kotlin
   data class Vehicle(
     val name : String = "matatu", 
     val capacity: Int = 300
@@ -68,8 +68,8 @@ Oh wow, wait! Can this work for any expression 🥺 ?
   println("VEHICLE : $vehicle") 
   // Prints "VEHICLE : Vehicle(name=matatu, capacity=300)"
   
-  println("NAME : ${vehicle.name}") 
-  // Prints "NAME : matatu" but notice the curly braces
+  println("NAME : ${vehicle.name}") // notice the curly braces
+  // Prints "NAME : matatu" 
   
   println("CAPACITY : ${vehicle.capacity * 12}") 
   // Prints "CAPACITY : 3600" 
