@@ -32,10 +32,7 @@ function HomepageHeader() {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout title={`To The Bits`} description="Let's have fun with Kotlin">
       <HomepageHeader />
       <main></main>
     </Layout>
