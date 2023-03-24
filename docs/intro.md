@@ -2,46 +2,79 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Welcome
 
-Let's discover **Docusaurus in less than 5 minutes**.
+> _Great things are done by a series of small things brought together_
 
-## Getting Started
+This is one of the best statements by _Vincent Van Gogh_ ! Echoing his words, our main focus will be on **bits**(small great things) that the `Kotlin` language does 
 
-Get started by **creating a new site**.
+:::tip
+These bits are not structured, so you can jump to any bit and start learning
+:::
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Let's start with a simple example
 
-### What you'll need
+## Printing 
+What do use to print to the standard output in `Kotlin` 🤔 ?
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+We have two functions to do this
+- `print` which prints the arguments passed to the function
+- `println` which does the same thing as `print` but adds a line break 
 
-## Generate a new site
+### Statement
+Oh okay, so how do I use `print` 🤔 ?
 
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
+```kotlin
+  print("Jambo") // Prints "Jambo"
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+### New Line
+Hmmm, is using `println` the same 🙈 ?
+```kotlin
+  println("Hello") 
+  print("Welcome to KotlinBits") 
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+  // Prints
+  // "Hello"
+  // "Welcome to KoltinBits"
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+> Remember with `println` the next printed statement will go on the next line
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+### String Template
+Looks simple enough, what if I have a variable and want to print it 🤷 ?
+```kotlin
+  val name = "Jambo"
+  print("Hi $name") // Prints "Hello Jambo"
+```
+> You can use the dollar sign before your variable name
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+:::info
+That is an example of a **`template expression`**, evaluated expressions added to a string
+:::
+
+Oh wow, wait! Can this work for any expression 🥺 ?
+> It depends, but it pretty much  works most for expressions
+
+```kotlin
+  data class Vehicle(
+    val name : String = "matatu", 
+    val capacity: Int = 300
+  )
+  
+  val vehicle = Vehicle()
+
+  println("VEHICLE : $vehicle") 
+  // Prints "VEHICLE : Vehicle(name=matatu, capacity=300)"
+  
+  println("NAME : ${vehicle.name}") // notice the curly braces
+  // Prints "NAME : matatu" 
+  
+  println("CAPACITY : ${vehicle.capacity * 12}") 
+  // Prints "CAPACITY : 3600" 
+```
+
+Wow 😲, that was insightful! But I have lots of questions...
+
+Hold your horses 🤣 😂 that's it, you've learned your first `Kotlin` bit. Browse for more...
