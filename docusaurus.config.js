@@ -38,7 +38,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          path: "bits",
+          routeBasePath: "bits",
           sidebarPath: require.resolve("./sidebars.js"),
+          lastVersion: "current",
+          onlyIncludeVersions: ["current"],
         },
         blog: {
           showReadingTime: true,
@@ -53,7 +57,17 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "quiz",
+        path: "quiz",
+        routeBasePath: "quiz",
+        sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -67,12 +81,18 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "intro",
-            position: "left",
+            to: "/bits/Intro",
             label: "Bits",
+            position: "left",
+            activeBaseRegex: `/docs/`,
           },
           { to: "/blog", label: "Articles", position: "left" },
+          {
+            to: "/quiz/Quizzy",
+            label: "Quizzy",
+            position: "left",
+            activeBaseRegex: `/docs/`,
+          },
         ],
       },
       footer: {
