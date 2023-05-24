@@ -75,6 +75,6 @@ Oh wow, wait! Can this work for any expression 🥺 ?
   // Prints "CAPACITY : 3600" 
 ```
 
-Wow 😲, that was insightful! But I have lots of questions...
+_Wow 😲, that was insightful! But I have lots of questions..._
 
 Hold your horses 🤣 😂 that's it, you've learned your first `Kotlin` bit. Browse for more...
