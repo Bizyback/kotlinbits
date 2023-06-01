@@ -87,12 +87,6 @@ const config = {
             activeBaseRegex: `/docs/`,
           },
           { to: "/blog", label: "Articles", position: "left" },
-          {
-            to: "/quiz/Quizzy",
-            label: "Quizzy",
-            position: "left",
-            activeBaseRegex: `/docs/`,
-          },
         ],
       },
       footer: {
