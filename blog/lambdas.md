@@ -4,6 +4,7 @@ title: Lambdas
 authors: [mambo]
 date: 2023-01-09T10:00
 tags: [functions, lambda]
+enableComments: true
 ---
 ### Overview
 
