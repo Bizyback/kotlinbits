@@ -52,7 +52,9 @@ const config = {
         },
         gtag: {
           trackingID: "G-T60W3YSF78",
-          anonymizeIP: true,
+        },
+        googleAnalytics: {
+          trackingID: "G-T60W3YSF78",
         },
       }),
     ],
