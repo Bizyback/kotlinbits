@@ -27,7 +27,6 @@ export default function BlogPostItemWrapper(props) {
           inputPosition="top"
           theme={colorMode}
           lang="en"
-          loading="lazy"
           crossorigin="anonymous"
         />
       )}
