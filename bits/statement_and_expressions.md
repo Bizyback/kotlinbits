@@ -13,7 +13,7 @@ A major difference is an expression has an actual value while a statement does h
 | <mark> Expression </mark> | **has** a value | `when` `if-else` `try-catch`  |
 
 ### _What difference does it make_?
-You can assign a variable to expressions but you can't do that for statements. For example :
+You can assign an expression to a variable but you can't do that for statements. For example :
 
 ```kotlin
 val person = if (true) "Koltiner" else "Droid" // valid
