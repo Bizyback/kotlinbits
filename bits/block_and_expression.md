@@ -41,7 +41,7 @@ Expression body functions do just that, you can declare what the function should
 
 
 :::caution
-- Expression body functions can only be used with expression like `if`, `when` or `try`, they cannot be used with statements.
+- Expression body functions can only be used with expressions such as `if`, `when` or `try`, they cannot be used with statements.
 - Removing the return type only works for functions with expression body, block body functions have to specify the return type and use the keyword `return`
 :::
 
