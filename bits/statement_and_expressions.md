@@ -5,7 +5,7 @@ sidebar_position: 5
 
 ### _What is the difference between a statement and expression?_
 
-A major difference is an expression has an actual value while a statement does have one.
+A major difference is an expression has an actual value while a statement does **NOT** have one.
 
 | Title | Valued | Examples |
 |:-------|:-------|:----------|
