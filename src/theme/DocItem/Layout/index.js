@@ -62,7 +62,6 @@ export default function DocItemLayout({ children }) {
             inputPosition="top"
             theme={colorMode}
             lang="en"
-            loading="lazy"
             crossorigin="anonymous"
           />
         </div>
