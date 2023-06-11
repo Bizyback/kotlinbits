@@ -78,12 +78,12 @@ const config = {
       navbar: {
         title: "KotlinBits",
         logo: {
-          alt: "My Site Logo",
+          alt: "KotlinBits",
           src: "img/logo.svg",
         },
         items: [
           {
-            to: "/bits/Intro",
+            to: "/bits/intro",
             label: "Bits",
             position: "left",
             activeBaseRegex: `/docs/`,
