@@ -1,5 +1,5 @@
 ---
-slug: sealed-classes
+slug: high-order-functions
 title: High Order Functions
 authors: [mambo]
 date: 2022-10-25T16:00
