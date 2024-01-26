@@ -8,6 +8,7 @@
 .docusaurus
 .cache-loader
 .idea
+.vscode
 
 # Misc
 .DS_Store
