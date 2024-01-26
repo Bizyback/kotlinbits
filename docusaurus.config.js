@@ -89,6 +89,12 @@ const config = {
             activeBaseRegex: `/docs/`,
           },
           { to: "/blog", label: "Articles", position: "left" },
+          {
+            to: "/quiz/quizzy",
+            label: "The Challenge",
+            position: "left",
+            activeBaseRegex: `/docs/`,
+          },
         ],
       },
       footer: {
