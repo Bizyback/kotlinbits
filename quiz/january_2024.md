@@ -4,7 +4,7 @@ title: January 2024
 ---
 
 # The Challenge #1
-Understanding infix function and member references
+Understanding how to use infix function and member references
 
 ### Question
 ```kotlin
