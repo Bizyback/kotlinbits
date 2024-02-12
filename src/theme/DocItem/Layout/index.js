@@ -51,10 +51,11 @@ export default function DocItemLayout({ children }) {
           <br></br>
           <Giscus
             id="comments"
-            repo="MamboBryan/kotlinbits"
+            repo="Bizyback/kotlinbits"
             repoId="R_kgDOJE1rbQ"
-            category="Articles"
-            categoryId="DIC_kwDOJE1rbc4CW6MA"
+            category="Bits"
+            categoryId="DIC_kwDOJE1rbc4CW6Mz"
+            data-strict="1"
             mapping="title"
             strict="0"
             reactionsEnabled="1"
