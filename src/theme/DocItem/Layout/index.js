@@ -51,19 +51,18 @@ export default function DocItemLayout({ children }) {
           <br></br>
           <Giscus
             id="comments"
-            repo="Bizyback/kotlinbits"
-            repoId="R_kgDOJE1rbQ"
+            repo="bizyback/kotlinbits"
+            repoId="R_kgDOJE1rbQ="
             category="Bits"
-            categoryId="DIC_kwDOJE1rbc4CW6Mz"
-            data-strict="1"
-            mapping="title"
-            strict="0"
+            categoryId="DIC_kwDOJE1rbc4CW6Mz-hVS"
+            mapping="specific"
+            term="Welcome to reaction & comments for KotlinBits"
             reactionsEnabled="1"
             emitMetadata="0"
             inputPosition="top"
             theme={colorMode}
             lang="en"
-            crossorigin="anonymous"
+            loading="lazy"
           />
         </div>
       </div>
