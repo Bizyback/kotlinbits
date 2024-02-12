@@ -18,7 +18,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "MamboBryan", // Usually your GitHub org/user name.
+  organizationName: "Bizyback", // Usually your GitHub org/user name.
   projectName: "kotlinbits", // Usually your repo name.
 
   onBrokenLinks: "throw",
