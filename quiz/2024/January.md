@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-title: January 2024
+title: January 
 ---
 
 # The Challenge #1
