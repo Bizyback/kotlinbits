@@ -16,7 +16,6 @@ Given an integer array `nums`, move all `0`'s to the end of it while maintaini
 ```
 Input: nums = [0,1,0,3,12]
 Output: [1,3,12,0,0]
-
 ```
 
 **Example 2:**
@@ -28,32 +27,28 @@ Output: [0]
 
 ### Code
 ```kotlin
-import junit.framework.TestCase.assertEquals
-
+import kotlin.test.*
 /**
- * Without changing anything in the main function. 
- * Ensure all the test cases pass
- */
-val IntArray.view: String get() = joinToString{ "$it" }
-
+* Without changing anything in the main make all test cases pass
+*/
 fun main() {
     
     val list = listOf(
-    	Pair(intArrayOf(0,1,0,3,12), intArrayOf(1,3,12,0,0)),
-    	Pair(intArrayOf(0), intArrayOf(0)),
-    	Pair(intArrayOf(0,1,0), intArrayOf(1,0,0)),
-    	Pair(intArrayOf(88,4,2,6), intArrayOf(88,4,2,6)),
-    	Pair(intArrayOf(9,3,4,0,0,4,6), intArrayOf(9,3,4,4,6,0,0)),
+        Pair(intArrayOf(0,1,0,3,12), intArrayOf(1,3,12,0,0)),
+        Pair(intArrayOf(0), intArrayOf(0)),
+        Pair(intArrayOf(0,1,0), intArrayOf(1,0,0)),
+        Pair(intArrayOf(88,4,2,6), intArrayOf(88,4,2,6)),
+        Pair(intArrayOf(9,3,4,0,0,4,6), intArrayOf(9,3,4,4,6,0,0)),
     )
     
     list.forEach{ (arr, expected) -> 
         println("-".repeat(30))
-        println("Expected -> [${expected.view}]")
-        println("Actual   -> [${moveZeroes(arr).view}]")
-    	assertEquals(
-     		expected.view,
-            moveZeroes(arr).view,
-    	)
+        println("Expected -> [${expected}]")
+        println("Actual   -> [${moveZeroes(arr)}]")
+        assertContentEquals(
+            expected,
+            moveZeroes(arr),
+        )
     }
     
     println("Everything Passed!")
