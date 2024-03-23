@@ -41,13 +41,13 @@ fun main() {
     
     /**
      * Ground Rules : 
-     * reverse should reverse the Linked List using recursion 
+     * the inverse function should reverse the Linked List using recursion 
      **/
     assertEquals(listOf(5,4,3,2,1), show(reverse(head)))
 
     /**
      * Ground Rules : 
-     * inverse should inverse the Linked List without using recursion 
+     * the inverse function should reverse the Linked List without using recursion 
      **/
     assertEquals(listOf(5,4,3,2,1), show(inverse(head)))
 
