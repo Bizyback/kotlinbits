@@ -49,9 +49,12 @@ fun main() {
 ```
 
 ### Solution
-<details>
-  <summary>Toggle me!</summary>
-  You thought you could get the easy way out?
-  😉 😜 😉 😜 😉 😜 
-  Come back later, for the solution 
-</details>
+> Add this after the main function
+
+```kotlin
+infix fun String.correct(pair: Pair<String, Int>) = this.replace(pair.first, pair.second.toString())
+
+infix fun String.merge(value: String) = this + value
+
+fun List<Alphabet>.years() = map(Alphabet::position)
+```
